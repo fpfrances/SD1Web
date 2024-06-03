@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    position: relative; /* Contain the absolute position of the dropdown */
+}
+
+header > h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Justify space between items */
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-links {
+    list-style:none;
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    left: 0rem; /* Position it aligned with the menu icon */
+    background-color: #333;
+    text-align: left;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+    max-height: 0; /* Start collapsed */
+    z-index: 1; /* Ensure it appears above other content */
+    width: 300px; /* Set a fixed width */
+}
+
+.nav-links li {
+    margin: 1rem 3rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block; /* Ensure links take full width */
+    padding: 0.5rem 1rem; /* Add padding for better touch target */
+}
+
+.menu-icon {
+    display: flex; /* Always display the menu icon */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute; /* Position at the top left */
+    top: 1rem;
+    left: 1rem;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Hide nav-links by default for larger screens */
+.nav-links {
+    display: none;
+}
+
+/* Show nav-links when active */
+.nav-links.active {
+    display: flex;
+    max-height: 800px; /* Adjust based on the number of items */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: flex; /* Ensure it's flex to transition */
+    }
+
+    .nav-links.active {
+        max-height: 800px; /* Adjust based on the number of items */
+    }
+}
