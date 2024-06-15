@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,6 +40,7 @@ header {
 }
 
 nav {
+    border-style: outset;
     display: flex;
     justify-content: space-between; /* Justify space between items */
     align-items: center;
@@ -47,7 +48,7 @@ nav {
 }
 
 .logo-container {
-    margin-top: 4px;
+    margin-top: 2px;
     margin-left: auto; /* Pushes the logo to the right */
 }
 
@@ -57,31 +58,36 @@ nav {
 }
 
 .nav-links {
-    list-style:circle;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-style: outset;
+    list-style:none;
     display: flex;
     flex-direction:column; /* Stack links vertically */
     position: absolute;
     top: 58px; /* Adjust based on your header height */
     left: 0rem; /* Position it aligned with the menu icon */
     background-color: #ffffff;
-    text-align: left;
+    text-align: center;
     transition: max-height 0.5s ease-in-out;
     overflow:hidden;
     max-height: 0; /* Start collapsed */
     z-index: 1; /* Ensure it appears above other content */
-    width: 280px; /* Set a fixed width */
+    width: 240px; /* Set a fixed width */
+    border-radius: 0px 50px 0px 50px; /* Change the border of the nav link */
 }
 
 .nav-links li {
-    margin: 0.8rem 2.2rem;
+   margin: 0.5rem 3rem;
 }
 
 .nav-links a {
     color: rgb(0, 0, 0);
-    text-decoration: none;
+    text-decoration:underline;
     font-size: 1.1rem;
     display: block; /* Ensure links take full width */
-    padding: 0.5rem 0rem; /* Add padding for better touch target */
+    padding: 0.6rem 0rem; /* Add padding for better touch target */
 }
 
 .menu-icon {
@@ -90,7 +96,7 @@ nav {
     cursor: pointer;
     position: absolute; /* Position at the top left */
     top: auto;
-    left: 1rem;
+    left: 0.5rem;
 }
 
 .menu-icon div {
