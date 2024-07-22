@@ -91,11 +91,11 @@ nav {
     max-height: 0; /* Start collapsed */
     z-index: 1; /* Ensure it appears above other content */
     width: 240px; /* Set a fixed width */
-    border-radius: 0px 50px 0px 50px; /* Change the border of the nav link */
+    border-radius: 0px 30px 0px 30px; /* Change the border of the nav link */
 }
 
 .nav-links li {
-   margin: 0.5rem 3rem;
+   margin: 0.5rem 2.5rem;
 }
 
 .nav-links a {
