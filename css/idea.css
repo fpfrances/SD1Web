@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative; /* Needed for the pseudo-element to be positioned correctly */
+    margin: 0; /* Remove default margin */
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/indexBackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7; /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: auto;
+    position: relative; /* Contain the absolute position of the dropdown */
+}
+
+.title-container {
+    max-width: 800px;
+    margin: 250px auto;
+    background-color: white; /* background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* text */
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    color: #333; /* text */
+    margin-bottom: 50px;
+}
+
+p {
+    text-align: justify;
+    color: #333;
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+nav {
+    border-style: outset;
+    display: flex;
+    justify-content: space-between; /* Justify space between items */
+    align-items: center;
+    padding: auto;
+}
+
+.logo-container {
+    margin-top: 2px;
+    margin-left: auto; /* Pushes the logo to the right */
+}
+
+.logo-container img {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+}
+
+.nav-links {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-style: outset;
+    list-style:none;
+    display: flex;
+    flex-direction:column; /* Stack links vertically */
+    position: absolute;
+    top: 58px; /* Adjust based on your header height */
+    left: 0rem; /* Position it aligned with the menu icon */
+    background-color: #ffffff;
+    text-align: center;
+    transition: max-height 0.5s ease-in-out;
+    overflow:hidden;
+    max-height: 0; /* Start collapsed */
+    z-index: 1; /* Ensure it appears above other content */
+    width: 240px; /* Set a fixed width */
+    border-radius: 0px 30px 0px 30px; /* Change the border of the nav link */
+}
+
+.nav-links li {
+   margin: 0.5rem 2.5rem;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+    font-size: 1.1rem;
+    display: block; /* Ensure links take full width */
+    padding: 0.6rem 0rem; /* Add padding for better touch target */
+}
+
+.menu-icon {
+    display: flex; /* Always display the menu icon */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute; /* Position at the top left */
+    top: auto;
+    left: 0.5rem;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 4px 0;
+}
+
+/* Hide nav-links by default for larger screens */
+.nav-links {
+    display: none;
+}
+
+/* Show nav-links when active */
+.nav-links.active {
+    display: flex;
+    max-height: 800px; /* Adjust based on the number of items */
+}
+
+/* Responsive styles */
+@media (max-width: 120px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: flex; /* Ensure it's flex to transition */
+    }
+
+    .nav-links.active {
+        max-height: 800px; /* Adjust based on the number of items */
+    }
+}
