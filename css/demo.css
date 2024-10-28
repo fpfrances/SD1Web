@@ -34,8 +34,8 @@ header {
 }
 
 .title-container {
-    max-width: 800px;
-    margin: 250px auto;
+    max-width: 1000px;
+    margin: 200px auto;
     background-color: white; /* background */
     padding: 30px;
     border-radius: 8px;
@@ -55,7 +55,7 @@ iframe {
 
 h2 {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     text-align: center;
     color: #333; /* text */
 }
