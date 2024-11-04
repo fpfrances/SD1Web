@@ -34,12 +34,18 @@ header {
 }
 
 .title-container {
-    max-width:675px;
+    max-width:600px;
     margin: 80px auto;
     background-color: white; /* background */
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 100px rgb(0, 0, 0);
+}
+
+.title-name {
+    margin: 0;
+    flex: 1; /* Takes up remaining space, centering itself in the navbar */
+    text-align: center;
 }
 
 h2 {
@@ -49,10 +55,9 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     color: #333; /* text */
-    margin-top: 30px;
 }
 
 .michael-container {
@@ -128,10 +133,10 @@ p {
 }
 
 nav {
-    border-style: outset;
     display: flex;
-    justify-content: space-between; /* Justify space between items */
+    justify-content: center;
     align-items: center;
+    position: relative; /* Allows positioning of other elements like logo and menu */
     padding: auto;
 }
 

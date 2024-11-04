@@ -35,19 +35,25 @@ header {
 
 .title-container {
     max-width: 1200px;
-    margin: 200px auto;
+    margin: 100px auto;
     background-color: white; /* background */
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
+.title-name {
+    margin: 0;
+    flex: 1; /* Takes up remaining space, centering itself in the navbar */
+    text-align: center;
+}
+
 h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 40px;
     text-align: center;
     color: #333; /* text */
 }
+
 
 h3 {
     font-size: 25px;
@@ -63,10 +69,10 @@ p {
 }
 
 nav {
-    border-style: outset;
     display: flex;
-    justify-content: space-between; /* Justify space between items */
+    justify-content: center;
     align-items: center;
+    position: relative; /* Allows positioning of other elements like logo and menu */
     padding: auto;
 }
 

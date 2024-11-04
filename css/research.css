@@ -128,11 +128,17 @@ p {
 }
 
 nav {
-    border-style: outset;
     display: flex;
-    justify-content: space-between; /* Justify space between items */
+    justify-content: center;
     align-items: center;
+    position: relative; /* Allows positioning of other elements like logo and menu */
     padding: auto;
+}
+
+.title-name {
+    margin: 0;
+    flex: 1; /* Takes up remaining space, centering itself in the navbar */
+    text-align: center;
 }
 
 .logo-container {

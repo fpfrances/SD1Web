@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Design Project Website</title>
+    <link rel="stylesheet" href="css/reports.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="title-name" id="title-name">
+                <h2>Thermal Dune Energy Storage</h2>
+            </div>
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Logo">
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+            <b><li><a href="index.html">Home</a></li>
+                <li><a href="idea.html">Project Idea</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="conference.html">Conference Paper</a></li>
+                <li><a href="demo.html">Demo Videos</a></li>
+                <li><a href="about.html">About the Team</a></li></b>
+            </ul>
+        </nav>
+    </header>
+    <div class="title-container" style="text-align: center;">
+            <div style="margin-bottom: 15px; margin-top: 20px;">
+            <h3 style="display: inline;">
+                <a href="#" onclick="openPDF('files/DCreport.pdf')">Divide and Conquer Report</a>
+            </h3>
+            <h4 style="display: inline; margin-left: 10px;">
+                (Click to load on the page and if it does not load, click
+                <a href="files/DCreport.pdf" target="_blank" target>here</a>)
+            </h4>
+        </div>
+    
+        <div style="margin-bottom: 15px;">
+            <h3 style="display: inline;">
+                <a href="#" onclick="openPDF('files/60Report.pdf')">60 Pages Report</a>
+            </h3>
+            <h4 style="display: inline; margin-left: 10px;">
+                (Click to load on the page and if it does not load, click
+                <a href="files/60Report.pdf" target="_blank" target>here</a>)
+            </h4>
+        </div>
+    
+        <div style="margin-bottom:20px;">
+            <h3 style="display: inline;">
+                <a href="#" onclick="openPDF('files/120Report.pdf')">120 Pages Report</a>
+            </h3>
+            <h4 style="display: inline; margin-left: 10px;">
+                (Click to load on the page and if it does not load, click
+                <a href="files/120Report.pdf" target="_blank" target>here</a>)
+            </h4>
+        </div>
+    
+        <div id="pdf-viewer" style="width: 100%; height: 0; overflow: hidden; transition: height 0.5s ease;"></div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
