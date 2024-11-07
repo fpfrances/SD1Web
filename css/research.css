@@ -56,8 +56,8 @@ h3 {
 }
 
 .display-container {
-    max-width:800px;
-    margin: 100px auto;
+    max-width:900px;
+    margin: 60px auto;
     background-color: white; /* background */
     padding: 20px;
     border-radius: 40px;
@@ -66,14 +66,14 @@ h3 {
 
 .display-container img {
     float: left;
-    height: 150px; /* Adjust the height as needed */
+    height: auto; /* Adjust the height as needed */
     width: auto;
     box-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
 .mcu-container {
-    max-width:800px;
-    margin: 100px auto;
+    max-width:900px;
+    margin: 60px auto;
     background-color: white; /* background */
     padding: 20px;
     border-radius: 40px;
@@ -82,47 +82,105 @@ h3 {
 
 .mcu-container img {
     float: left;
-    height: 150px; /* Adjust the height as needed */
+    margin-left: 40px;
+    height: 215px; /* Adjust the height as needed */
     width: auto;
     box-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
-.filipe-container {
-    max-width:800px;
-    margin: 100px auto;
+.thermocouple-container {
+    max-width:900px;
+    margin: 60px auto;
     background-color: white; /* background */
     padding: 20px;
     border-radius: 40px;
     box-shadow: 0 0 100px rgb(0, 0, 0);
 }
 
-.filipe-container img {
+.thermocouple-container img {
     float: left;
-    height: 150px; /* Adjust the height as needed */
+    margin-left: 25px;
+    height: 200px; /* Adjust the height as needed */
     width: auto;
     box-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
-.tanner-container {
-    max-width:800px;
-    margin: 100px auto;
+.dht-container {
+    max-width:900px;
+    margin: 60px auto;
     background-color: white; /* background */
     padding: 20px;
     border-radius: 40px;
     box-shadow: 0 0 100px rgb(0, 0, 0);
 }
 
-.tanner-container img {
+.dht-container img {
     float: left;
-    height: 150px; /* Adjust the height as needed */
+    margin-left: 40px;
+    height: 210px; /* Adjust the height as needed */
     width: auto;
     box-shadow: 0 0 30px rgb(0, 0, 0);
 }
+
+.heater-container {
+    max-width:900px;
+    margin: 60px auto;
+    background-color: white; /* background */
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+}
+
+
+.heater-container img {
+    float: left;
+    margin-left: 55px;
+    height: 230px; /* Adjust the height as needed */
+    width: auto;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+.valve-container {
+    max-width:900px;
+    margin: 60px auto;
+    background-color: white; /* background */
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+}
+
+
+.valve-container img {
+    float: left;
+    margin-left: 60px;
+    height: 210px; /* Adjust the height as needed */
+    width: auto;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+.airflow-container {
+    max-width:900px;
+    margin: 60px auto;
+    background-color: white; /* background */
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+}
+
+
+.airflow-container img {
+    float: left;
+    margin-left: 40px;
+    height: 230px; /* Adjust the height as needed */
+    width: auto;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
 
 p {
     margin-top: 10px; /* Adjust the value as needed */
-    margin-left: 165px; /* Adjust the value as needed */
-    text-align: justify;
+    margin-left: 360px; /* Adjust the value as needed */
+    text-align: left;
     color: #333;
     margin-bottom: auto; /* Adjust the value as needed */
 }
