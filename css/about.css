@@ -154,12 +154,12 @@ nav {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    border-style: outset;
+    border-style:hidden;
     list-style:none;
     display: flex;
     flex-direction:column; /* Stack links vertically */
     position: absolute;
-    top: 58px; /* Adjust based on your header height */
+    top: 56px; /* Adjust based on your header height */
     left: 0rem; /* Position it aligned with the menu icon */
     background-color: #ffffff;
     text-align: center;
@@ -181,6 +181,11 @@ nav {
     font-size: 1.1rem;
     display: block; /* Ensure links take full width */
     padding: 0.6rem 0rem; /* Add padding for better touch target */
+}
+
+/* Scale text on hover */
+.nav-links a:hover {
+    transform: scale(1.1);  /* Scale text to 110% on hover */
 }
 
 .menu-icon {
@@ -211,13 +216,128 @@ nav {
 }
 
 /* Responsive styles */
-@media (max-width: 120px) {
-    nav {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .title-container {
+        max-width: 90%; /* Adjusted for smaller screens */
+        margin: 40px auto; /* Adjusted vertical spacing */
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+
+    .michael-container {
+        max-width: 90%;
+        margin: 20px auto;
+        background-color: white; /* background */
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0 0 100px rgb(0, 0, 0);
+    }
+
+    .michael-container img {
+        float: none; /* Stack image above text */
+        width: 50%; /* Make the image responsive */
+        margin-left: 90px;
+        margin-bottom: 10px; /* Add spacing below image */
+    }
+
+    .miguel-container {
+        max-width: 90%;
+        margin: 20px auto;
+        background-color: white; /* background */
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0 0 100px rgb(0, 0, 0);
+    }
+
+    .miguel-container img {
+        float: none; /* Stack image above text */
+        width: 50%; /* Make the image responsive */
+        margin-left: 90px;
+        margin-bottom: 10px; /* Add spacing below image */
+    }
+
+    .filipe-container {
+        max-width: 90%;
+        margin: 20px auto;
+        background-color: white; /* background */
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0 0 100px rgb(0, 0, 0);
+    }
+
+    .filipe-container img {
+        float: none; /* Stack image above text */
+        width: 50%; /* Make the image responsive */
+        margin-left: 90px;
+        margin-bottom: 10px; /* Add spacing below image */
+    }
+
+    .tanner-container {
+        max-width: 90%;
+        margin: 20px auto;
+        background-color: white; /* background */
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0 0 100px rgb(0, 0, 0);
+    }
+
+    .tanner-container img {
+        float: none; /* Stack image above text */
+        width: 50%; /* Make the image responsive */
+        margin-left: 90px;
+        margin-bottom: 10px; /* Add spacing below image */
+    }
+
+    p {
+        margin-left: 10px; /* Adjust the value as needed */
+        text-align: center;
+        color: #333;
+        margin-bottom: auto; /* Adjust the value as needed */
+    }
+
+    .title-name {
+        margin: 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px; /* Slightly smaller font size for mobile */
+        text-align: center;
+        color: #333;
+    }
+
+    .logo-container {
+        margin-top: 2px;
+        margin-left: auto;
+    }
+
+    .logo-container img {
+        height: 40px; /* Adjust logo size for mobile */
+        width: auto;
     }
 
     .nav-links {
         display: flex; /* Ensure it's flex to transition */
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        max-height: 0; /* Initially collapsed */
+        overflow: hidden; /* Hide overflowing items when collapsed */
+        transition: max-height 0.3s ease; /* Smooth opening/closing */
+        top: 46px; /* Adjust based on your header height */
+        left: 0rem; /* Position it aligned with the menu icon */
+    }
+
+    .nav-links li {
+        margin: 0.5rem 1.5rem;
+    }
+
+    .nav-links a {
+        color: rgb(0, 0, 0);
+        font-size: 1rem; /* Slightly smaller text size */
+        display: block;
+        padding: 0.5rem 0;
     }
 
     .nav-links.active {
