@@ -34,12 +34,18 @@ header {
 }
 
 .title-container {
-    max-width:600px;
-    margin: 80px auto;
+    max-width:665px;
+    margin: 60px auto;
     background-color: white; /* background */
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 100px rgb(0, 0, 0);
+}
+
+.title-container img {
+    align-content: center;
+    margin-top: 20px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
 .title-name {
@@ -226,6 +232,13 @@ nav {
         box-shadow: 0 0 20px rgb(0, 0, 0);
     }
 
+    .title-container img {
+        float: none; /* Stack image above text */
+        width: 80%; /* Make the image responsive */
+        margin-left: 25px;
+        margin-bottom: 10px; /* Add spacing below image */
+    }
+
     .michael-container {
         max-width: 90%;
         margin: 20px auto;
@@ -237,8 +250,8 @@ nav {
 
     .michael-container img {
         float: none; /* Stack image above text */
-        width: 50%; /* Make the image responsive */
-        margin-left: 90px;
+        width: 60%; /* Make the image responsive */
+        margin-left: 50px;
         margin-bottom: 10px; /* Add spacing below image */
     }
 
@@ -253,8 +266,8 @@ nav {
 
     .miguel-container img {
         float: none; /* Stack image above text */
-        width: 50%; /* Make the image responsive */
-        margin-left: 90px;
+        width: 60%; /* Make the image responsive */
+        margin-left: 50px;
         margin-bottom: 10px; /* Add spacing below image */
     }
 
@@ -269,8 +282,8 @@ nav {
 
     .filipe-container img {
         float: none; /* Stack image above text */
-        width: 50%; /* Make the image responsive */
-        margin-left: 90px;
+        width: 60%; /* Make the image responsive */
+        margin-left: 50px;
         margin-bottom: 10px; /* Add spacing below image */
     }
 
@@ -285,8 +298,8 @@ nav {
 
     .tanner-container img {
         float: none; /* Stack image above text */
-        width: 50%; /* Make the image responsive */
-        margin-left: 90px;
+        width: 60%; /* Make the image responsive */
+        margin-left: 50px;
         margin-bottom: 10px; /* Add spacing below image */
     }
 
@@ -304,8 +317,9 @@ nav {
     }
 
     h2 {
-        font-size: 20px; /* Slightly smaller font size for mobile */
+        font-size: 14px; /* Slightly smaller font size for mobile */
         text-align: center;
+        margin-left: 30px;
         color: #333;
     }
 

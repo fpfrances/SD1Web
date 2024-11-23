@@ -35,7 +35,7 @@ header {
 
 .title-container {
     max-width: 1000px;
-    margin: 200px auto;
+    margin: 100px auto;
     background-color: white; /* background */
     padding: 30px;
     border-radius: 8px;
@@ -172,8 +172,9 @@ nav {
     }
 
     h2 {
-        font-size: 20px; /* Slightly smaller font size for mobile */
+        font-size: 14px; /* Slightly smaller font size for mobile */
         text-align: center;
+        margin-left: 30px;
         color: #333;
     }
 
@@ -185,6 +186,11 @@ nav {
     .logo-container img {
         height: 40px; /* Adjust logo size for mobile */
         width: auto;
+    }
+
+    iframe {
+        max-width: 100%;
+        height: 200px;
     }
 
     .nav-links {

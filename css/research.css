@@ -292,8 +292,9 @@ nav {
     }
 
     h2 {
-        font-size: 20px; /* Slightly smaller font size for mobile */
+        font-size: 14px; /* Slightly smaller font size for mobile */
         text-align: center;
+        margin-left: 30px;
         color: #333;
     }
 
@@ -340,40 +341,43 @@ nav {
 
     .mcu-container img {
         float: none; /* Stack image above text */
-        width: 70%; /* Make the image responsive */
-        margin-left: 62px;
+        width: 90%; /* Make the image responsive */
+        margin-left: 13px;
         margin-bottom: 10px; /* Add spacing below image */
     }
 
     .thermocouple-container img {
         float: none; /* Stack image above text */
-        width: 80%; /* Make the image responsive */
-        margin-left: 40px;
+        width: 100%; /* Make the image responsive */
+        margin-left: 0px;
         margin-bottom: 10px; /* Add spacing below image */
     }
     
     .dht-container img {
         float: none; /* Stack image above text */
-        width: 80%; /* Make the image responsive */
+        width: 100%; /* Make the image responsive */
+        margin-left: 0px;
         margin-bottom: 10px; /* Add spacing below image */
     }
 
     .heater-container img {
         float: none; /* Stack image above text */
-        width: 70%; /* Make the image responsive */
-        margin-left: 60px;
+        width: 100%; /* Make the image responsive */
+        margin-left: 0px;
         margin-bottom: 10px; /* Add spacing below image */
     }
 
     .valve-container img {
         float: none; /* Stack image above text */
-        width: 70%; /* Make the image responsive */
+        width: 100%; /* Make the image responsive */
+        margin-left: 0px;
         margin-bottom: 10px; /* Add spacing below image */
     }
 
     .airflow-container img {
         float: none; /* Stack image above text */
-        width: 80%; /* Make the image responsive */
+        width: 100%; /* Make the image responsive */
+        margin-left: 0px;
         margin-bottom: 10px; /* Add spacing below image */
     }
 
